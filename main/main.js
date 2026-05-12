@@ -22,7 +22,7 @@ export default function () {    //เรียกใช้ API ใน export def
   //response = Search()  //3
   //response = รายละเอียดสินค้า()  //4
   //response = เพิ่มสินค้า()  //5
-  //response = Checkout_ตะกร้า()  //6
+  response = Checkout_ตะกร้า()  //6
   //response = รายละเอียดสินค้าในตะดร้า()  //7
   //response = Checkstock()  //8
   //response = Create_Order()  //9
