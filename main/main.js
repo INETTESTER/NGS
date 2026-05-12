@@ -2,20 +2,30 @@
 import { sleep } from 'k6';
 import { error_check } from '../check/check.js';
 import { scenario } from 'k6/execution';
-import { DownloadFile, GetProfile, PostProfile, PostProfile_2, PostProfile_3, UploadFile } from '../api/example.js';
+import { หน้าแรก_FlashSale } from '../api/หน้าแรก_FlashSale.js';
+import { หน้าแรก_สินค้าสำหรับคุณ } from '../api/หน้าแรก_สินค้าสำหรับคุณ.js';
+import { Search } from '../api/Search.js';
+import { รายละเอียดสินค้า } from '../api/รายละเอียดสินค้า.js';
+import { เพิ่มสินค้า } from '../api/เพิ่มสินค้า.js';
+import { รายละเอียดสินค้าในตะดร้า } from '../api/รายละเอียดสินค้าในตะดร้า.js';
+import { Checkout_ตะกร้า } from '../api/Checkout_ตะกร้า.js';
+import { Checkstock } from '../api/Checkstock.js';
+import { Create_Order } from '../api/Create_Order.js';
 
 
 
 //============================================================================
 
 export default function () {    //เรียกใช้ API ใน export default function
-  //response = GetProfile()
-  //response = PostProfile()
-  //response = PostProfile_2()
-  //response = PostProfile_3(scenario)
-  //response = DownloadFile()
-  //response = UploadFile()
-  //response = UploadFile_2()
+  //response = หน้าแรก_FlashSale()
+  //response = หน้าแรก_สินค้าสำหรับคุณ()
+  //response = Search()
+  //response = รายละเอียดสินค้า()
+  //response = เพิ่มสินค้า()
+  //response = รายละเอียดสินค้าในตะดร้า()
+  //response = Checkout_ตะกร้า()
+  //response = Checkstock()
+  //response = Create_Order()
 
 
   error_check(response);
