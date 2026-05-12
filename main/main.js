@@ -17,15 +17,15 @@ import { Create_Order } from '../api/Create_Order.js';
 //============================================================================
 
 export default function () {    //เรียกใช้ API ใน export default function
-  //response = หน้าแรก_FlashSale()
-  //response = หน้าแรก_สินค้าสำหรับคุณ()
-  //response = Search()
-  //response = รายละเอียดสินค้า()
-  //response = เพิ่มสินค้า()
-  //response = รายละเอียดสินค้าในตะดร้า()
-  //response = Checkout_ตะกร้า()
-  //response = Checkstock()
-  //response = Create_Order()
+  //response = หน้าแรก_FlashSale()  //1
+  //response = หน้าแรก_สินค้าสำหรับคุณ()  //2
+  //response = Search()  //3
+  //response = รายละเอียดสินค้า()  //4
+  //response = เพิ่มสินค้า()  //5
+  //response = Checkout_ตะกร้า()  //6
+  //response = รายละเอียดสินค้าในตะดร้า()  //7
+  //response = Checkstock()  //8
+  //response = Create_Order()  //9
 
 
   error_check(response);
