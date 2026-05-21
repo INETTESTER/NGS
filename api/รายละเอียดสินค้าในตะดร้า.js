@@ -1,7 +1,12 @@
 import http from 'k6/http';
-import { token } from './env.js';
+//import { token } from './env.js';
+function getToken(start = 1) {
+  const num = start + ((__VU + __ITER) % 100000);
+  return `LT${num}`;
+}
 
 export function รายละเอียดสินค้าในตะดร้า() {
+  const token = getToken(1);
   const url = 'https://nexgencommerce.one.th/api/backend/api/detail_cart_b2b_v2';
 
   const payload = JSON.stringify({

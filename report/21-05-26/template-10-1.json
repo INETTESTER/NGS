@@ -1,0 +1,31 @@
+{
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {}
+    },
+    "metrics": {
+        "iteration_duration": {
+            "avg": 3.65904,
+            "min": 0.3993,
+            "med": 3.1986499999999998,
+            "max": 8.396,
+            "p(90)": 8.396,
+            "p(95)": 8.396
+        },
+        "iterations": {
+            "count": 10,
+            "rate": 666.9156485087766
+        },
+        "data_sent": {
+            "count": 0,
+            "rate": 0
+        },
+        "data_received": {
+            "count": 0,
+            "rate": 0
+        }
+    }
+}

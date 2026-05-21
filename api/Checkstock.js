@@ -1,7 +1,12 @@
 import http from 'k6/http';
-import { token } from './env.js';
+//import { token } from './env.js';
+function getToken(start = 1) {
+  const num = start + ((__VU + __ITER) % 100000);
+  return `LT${num}`;
+}
 
 export function Checkstock() {
+  const token = getToken(1);
   const url = 'https://nexgencommerce.one.th/api/backend/api/ckeck_stock_before_create_order';
 
   const payload = JSON.stringify({

@@ -1,8 +1,13 @@
 import http from 'k6/http';
-import { token } from './env.js';
+//import { token } from './env.js';
 //import { cookie } from './cookie.js';
 
+function getToken(start = 1) {
+  const num = start + ((__VU + __ITER) % 100000);
+  return `LT${num}`;
+}
 export function Create_Order() {
+  const token = getToken(1);
   const url = 'https://nexgencommerce.one.th/api/backend/api/create_order_b2b';
 
   const payload = JSON.stringify({

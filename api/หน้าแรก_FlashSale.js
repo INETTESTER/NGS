@@ -1,5 +1,9 @@
 import http from 'k6/http';
 import { token } from './env.js';
+// function getToken(start = 1) {
+//   const num = start + ((__VU + __ITER) % 100000);
+//   return `LT${num}`;
+// }
 
 export function หน้าแรก_FlashSale() {
   const url = 'https://nexgencommerce.one.th/api/backend_2/product_card/landingpage';
