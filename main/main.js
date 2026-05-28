@@ -14,6 +14,8 @@ import { Create_Order } from '../api/Create_Order.js';
 import { health_check } from '../api/health_check.js';
 import { backend_2 } from '../api/backend_2.js';
 import { backend_4 } from '../api/backend_4.js';
+import { homepage } from '../api/homepage.js';
+import { getqrcodev2 } from '../api/getqrcodev2.js';
 
 
 
@@ -32,6 +34,8 @@ export default function () {    //เรียกใช้ API ใน export def
   //response = health_check()
   //response = backend_2()
   //response = backend_4()
+  // response = homepage()
+  //response = getqrcodev2()
 
 
   error_check(response);
